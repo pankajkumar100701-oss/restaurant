@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
+    loader: "custom",
+    loaderFile: "./lib/unsplash-loader.ts",
     remotePatterns: [
       {
         protocol: "https",
